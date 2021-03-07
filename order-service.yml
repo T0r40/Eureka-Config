@@ -1,0 +1,17 @@
+server:
+ port: 9017
+
+eureka:
+ client:
+   serviceUrl:
+     defaultZone: ${EUREKA_URI:http://localhosta:8761/eureka}
+     healthcheck:
+       enabled: true
+
+spring:
+ application:
+   name: order-service
+ data:
+   mongodb:
+     database: order-service_db
+     port: 27017
