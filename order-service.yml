@@ -4,7 +4,7 @@ server:
 eureka:
  client:
    serviceUrl:
-     defaultZone: ${EUREKA_URI:http://localhosta:9019/eureka}
+     defaultZone: ${EUREKA_URI:http://localhost:9019/eureka}
      healthcheck:
        enabled: true
 
